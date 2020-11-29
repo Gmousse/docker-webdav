@@ -1,5 +1,5 @@
 # Do not use nginx as base since extras are not included.
-FROM      debian:jessie
+FROM      debian:stretch
 
 RUN       apt-get update && \
           apt-get install -y nginx nginx-extras apache2-utils && \
